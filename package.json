@@ -1,7 +1,7 @@
 {
   "name": "gnosis-safe-multisig-desktop",
   "version": "1.0.0",
-  "description": "A Desktop version of Gnosis Safe Multisig app",
+  "description": "A Desktop version of Gnosis Safe App",
   "main": "main.js",
   "scripts": {
     "start": "electron .",
