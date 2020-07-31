@@ -1,4 +1,4 @@
-# Safe Electron App 2020
+# Safe Electron Multisig App 2020
 
 ## To Use
 
