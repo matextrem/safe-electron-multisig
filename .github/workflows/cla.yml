@@ -1,7 +1,7 @@
 name: "CLA Assistant"
 on:
   issue_comment:
-    types: [created]
+    types: [created,edited, deleted]
   pull_request:
     types: [opened,closed,synchronize]
 
@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: "CLA Assistant"
-        if: (github.event.pull_request_review_comment == 'recheckcla' || github.event.comment.body == 'I have read the CLA Document and I hereby sign the CLA') || github.event_name == 'pull_request'
+        if: (contains(github.event.comment.html\_url, '/pull/') && contains(github.event.comment.body, 'recheckcla') || github.event.comment.body == 'I have read the CLA Document and I hereby sign the CLA') || github.event_name == 'pull_request'
         # Alpha Release
         uses: cla-assistant/github-action@v1.4.2-alpha
         env: 
