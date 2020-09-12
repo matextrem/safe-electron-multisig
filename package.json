@@ -95,7 +95,7 @@
     "dotenv": "^8.2.0",
     "electron-squirrel-startup": "^1.0.0",
     "electron-updater": "^4.2.0",
-    "node-fetch": "^2.6.0",
+    "node-fetch": "^2.6.1",
     "node-snackbar": "0.1.16"
   },
   "devDependencies": {
